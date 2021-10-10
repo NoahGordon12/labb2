@@ -1,0 +1,20 @@
+2021-10-10T12:57:08+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "load_stylesheets" not found or invalid function name in C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\script-loader.php(2083): do_action('wp_enqueue_scri...')
+#3 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\class-wp-hook.php(303): wp_enqueue_scripts('')
+#4 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\general-template.php(3015): do_action('wp_head')
+#7 C:\xampp\htdocs\labb2-noah\wordpress\wp-content\themes\ecommerce-hub\header.php(12): wp_head()
+#8 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#10 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\xampp\htdocs\labb2-noah\wordpress\wp-content\themes\ecommerce-child\index.php(3): get_header()
+#12 C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\labb2-noah\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\labb2-noah\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\labb2-noah\wordpress\wp-includes\class-wp-hook.php on line 303
+
